@@ -42,4 +42,7 @@ public class DriveTrain extends SubsystemBase {
 
 
   }
+  public void arcadeDrive(double speed, double turn) {
+    _diffDrive.arcadeDrive(speed, turn);
+  }
 }
