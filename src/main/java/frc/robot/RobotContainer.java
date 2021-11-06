@@ -40,7 +40,7 @@ public class RobotContainer {
     _arcadeDrive = new ArcadeDrive(_driveTrain, _leftJoystick);
     _auto = new TimedAuto(_driveTrain);
 
-    _driveTrain.setDefaultCommand(_arcadeDrive);
+    //_driveTrain.setDefaultCommand(_arcadeDrive);
     
 
     configureButtonBindings();

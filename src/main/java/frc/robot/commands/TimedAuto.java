@@ -29,10 +29,10 @@ public class TimedAuto extends CommandBase {
   // Called every time the scheduler runs while the command is scheduled.
   @Override
   public void execute() {
-    if (timer.get() <= 10) {
+    if (timer.get() <= 5) {
       driveTrain.tankDrive(0.5, 0.5);
     }
-    if (timer.get() > 10) {
+    else {
       driveTrain.tankDrive(0, 0);
     }
   }
